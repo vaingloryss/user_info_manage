@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.vainglory</groupId>
+  <artifactId>user_info_manage</artifactId>
+  <packaging>pom</packaging>
+  <version>1.0</version>
+  <modules>
+    <module>user_pojo</module>
+    <module>user_controller</module>
+    <module>user_service_api</module>
+    <module>user_dao</module>
+    <module>user_service</module>
+  </modules>
+
+  <name>user_info_manage</name>
+  <!-- FIXME change it to the project's website -->
+  <url>http://www.example.com</url>
+
+
+
+</project>

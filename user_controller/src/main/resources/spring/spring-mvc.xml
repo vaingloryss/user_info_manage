@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd 
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+        <!--服务消费者-->
+
+        <!--Controller扫描器-->
+        <context:component-scan base-package="com.vainglory.controller"/>
+        <!-- 配置注解驱动器 -->
+        <mvc:annotation-driven />
+        <!--应用名称-->
+        <dubbo:application name="userController"/>
+        <!--向zookeeper注册服务-->
+        <dubbo:registry protocol="zookeeper" address="baseservice.qfjava.cn:8601,baseservice.qfjava.cn:8602,baseservice.qfjava.cn:8603" timeout="60000" />
+        <!--需要调用的服务-->
+        <dubbo:reference interface="com.vainglory.service.UserService" id="userService"/>
+</beans>

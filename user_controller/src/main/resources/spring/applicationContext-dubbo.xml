@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+<!--    <context:component-scan base-package="com.qainfeng.order.controller"/>-->
+
+<!--    &lt;!&ndash;-->
+<!--        给当前提供者起个别名,用于区分的-->
+<!--        &ndash;&gt;-->
+<!--    <dubbo:application name="ordercontrtoller"/>-->
+<!--    &lt;!&ndash;    <dubbo:registry address="" port="" protocol=""&ndash;&gt;-->
+
+<!--    <dubbo:registry protocol="zookeeper" address="baseservice.qfjava.cn:8601,baseservice.qfjava.cn:8602,baseservice.qfjava.cn:8603" />-->
+
+<!--    &lt;!&ndash;-->
+<!--    我们要调用哪个服务-->
+<!--    &ndash;&gt;-->
+
+<!--    <dubbo:reference interface="com.qianfeng.order.service.OrderService" id="dasdas"/>-->
+
+
+</beans>
